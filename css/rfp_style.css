@@ -1,0 +1,335 @@
+@font-face {
+  font-family: Butler;
+  src: url(http://imagemotion.com/wp-content/plugins/rfp/fonts/butler_regular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Butler;
+  src: url(http://imagemotion.com/wp-content/plugins/rfp/fonts/butler_bold.otf);
+  font-weight: bold;
+}
+	/* #3953FF; */
+#rfp-wrap .alert {
+	border-color: #ef3b68!important
+}
+#rfp_message {
+	width: 100%;
+}
+#rfp_message span{
+	margin: 0 30px;
+}
+#rfp_succes {
+	width: 100%;
+	padding: 20px 0;
+	background-color: #BBFFC0;
+	color: #005813;
+}
+#rfp_error { 
+	width: 100%;
+	padding: 20px 0;
+	background-color: #FFCDCD;
+	color: #B10000;
+}
+#rfp_message .x_close {
+	float: right;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+#rfp-wrap {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+#rfp-page {
+	padding: 30px 30px 30px 5%;
+}
+
+#rfp-page #rfp-subtitle-page {
+	width: 50%;
+}
+#rfp-title-page {
+	font-size: 2em;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+#rfp-breadcrumbs {
+	width: 90%;
+	height: 6px;
+	background: #e9e9e9;
+	margin: 30px auto 0 auto;
+	position: relative;
+}
+#rfp-breadcrumbs #load {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 6px;
+	background-color: #3953FF;
+}
+#rfp-breadcrumbs span {
+	width: 10px;
+	height: 10px;
+	bottom: -50%;
+	position: absolute;
+	z-index: 3;
+}
+#rfp-breadcrumbs span .fa {
+	color: #e9e9e9;
+	position: absolute;
+	font-size: 1.7em;
+	top: -10px;
+	left: -7px;
+}
+#rfp-breadcrumbs span.active .fa {
+	color: #3953FF;
+}
+#rfp-breadcrumbs span.color-blue .fa {
+	color: #3953FF;
+}
+#rfp-container {
+	background-color: #f3f3f5;
+	padding: 30px 0;
+	overflow: hidden;
+}
+#rfp-container .page {
+	display: none;
+}
+#rfp-container .active {
+	display: block;
+	transition: all 1s;
+}
+#rfp-container .tab {
+	width: 80%;
+	margin: 40px auto 40px auto;
+	display: block;
+	overflow: hidden;
+}
+#rfp-container .tab .question {
+	float: left;
+	width: 30%;
+}
+#rfp-container .tab .answer {
+	float: right;
+	width: 65%;
+	padding-left: 5%;
+}
+#rfp-container .tab .answer label>div {
+	background-color: #fff;
+	padding: 20px 60px 20px 20px;
+	margin: 15px;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 1px 1px 10px #A5A8AD;
+}
+#rfp-container .tab .answer label>div i{
+	position: absolute;
+	font-size: 2em;
+	top: 20px;
+	right: 20px;
+	color: #3953FF;
+	opacity: 0;
+	transition: opacity .5s;
+}
+#rfp-container .tab .answer label>div>div:first-child {
+	font-weight: bold;
+}
+#rfp-container .tab .answer label>div>div:last-child {
+	color: #A5A8AD;
+}
+#rfp-container .tab .radio input[type=radio] {
+	display: none;
+}
+#rfp-container .tab .radio input[type=radio]+label {
+	width: 100%
+}
+#rfp-container .tab .radio input[type=radio]+label>div {
+	border: 5px solid #fff;
+	transition: all .5s;
+}
+#rfp-container .tab .radio input[type=radio]:checked+label>div {
+	border: 5px solid #3953FF;
+	transition: all .5s;
+}
+#rfp-container .tab .radio input[type=radio]:checked+label>div i{
+	opacity: 1;
+	transition: all .5s;
+}
+#rfp-container .tab .question .h {
+	font-size: 1.5em;
+	font-family: Butler;
+	font-weight: bold;
+}
+#rfp-container .tab .question p {
+	color: #A5A8AD;
+}
+.end {
+	content: '';
+	clear: both;
+	background-color: #e9e9e9;
+	width: 90%;
+	height: 2px;
+	margin: 0 auto;
+}
+#rfp-container .tab .answer .text-bold {
+	font-weight: bold;
+}
+#rfp-container .tab .answer input {
+	font-size: 1em;
+}
+#rfp-container .tab .answer textarea {
+	font-size: 1.4em;
+	background-color: #fff;
+}
+#rfp-container .tab .answer .input-text {
+	width: 90%;
+	margin: 15px 0;
+	padding: 10px;
+	border: 2px solid #e9e9e9;
+	border-radius: 5px;
+	transition: border-color .5s;
+	background-color: #fff;
+}
+#rfp-container .tab .answer .input-text:focus {
+	border-color: #3953FF;
+	outline: none;
+	transition: border-color .5s;
+}
+#rfp-container .tab .answer .input-textarea {
+	width: 90%;
+	height: 100px;
+	margin: 20px 0;
+	padding: 10px;
+	border: 2px solid #e9e9e9;
+	border-radius: 5px;
+	transition: border-color .5s;
+}
+#rfp-container .tab .answer .input-textarea:focus {
+	border-color: #3953FF;
+	outline: none;
+	transition: border-color .5s;
+}
+#rfp-container .tab .answer .text-claire {
+	color: #A5A8AD;
+}
+
+/* Frorm controls */
+#submit {
+	width: 90%;
+	text-align: right;
+	padding: 30px 0;
+	overflow: hidden;
+}
+#submit button{
+	color: #000;
+	cursor: pointer;
+	padding: 10px 30px;
+	background-color: #fff;
+	border: 2px solid #A5A8AD;
+	transition: border-color .5s;
+	outline: none;
+}
+#submit button:hover {
+	border-color: #3953FF;
+	transition: border-color .5s;
+}
+#rfp-controls {
+	background-color: #fff;
+}
+#rfp-controls button {
+	color: #000;
+	opacity: 0;
+	transition: opacity .5s;
+}
+#rfp-controls button.active {
+	opacity: 1;
+	transition: opacity .5s;
+}
+#rfp-controls>div {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0;
+	text-align: right;
+}
+#rfp-controls>div button {
+	cursor: pointer;
+	padding: 10px 30px;
+	background-color: #fff;
+	border: 2px solid #A5A8AD;
+	transition: border-color .5s;
+	outline: none;
+}
+#rfp-controls>div button:hover {
+	border-color: #3953FF;
+	transition: border-color .5s;
+}
+.collone2 .col_left{
+	width: 50%;
+	float: left;
+}
+.collone2 .col_right{
+	width: 50%;
+	float: right;
+}
+#inspires input {
+	display: none;
+}
+#inspires label {
+	width: 28%;
+	height: auto;
+	overflow: hidden;
+	margin: 1%;
+	border: 4px solid #F3F3F5;
+	cursor: pointer;
+	position: relative;
+}
+#inspires label span {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 2em;
+	opacity: 0;
+	transition: all .5s;
+}
+#inspires label span i {
+	color: #3953FF;
+	transition: all .5s;
+}
+#inspires input:checked+label {
+	border-color: #3953FF;
+	transition: all .5s;
+}
+#inspires input:checked+label span {
+	opacity: 1;
+	transition: all .5s;
+}
+#inspires label img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+/* Frorm controls */
+
+/* media */
+@media (max-width: 768px) {
+
+	#rfp-page #rfp-subtitle-page {
+		width: 100%;
+	}
+	#rfp-container .tab .question {
+		width: 100%;
+	}
+	#rfp-container .tab .answer {
+		width: 100%;
+		padding-left: 0;
+	}
+	#inspires label {
+		width: 45%;
+	}
+}
+@media (max-width: 470px) {
+
+	#inspires label {
+		width: 90%;
+	}
+}
+/* end media */
